@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <header class="jumbotron" (click)="addExclamationToTile()">
       <h1 [class]="h1Class"> {{ title }}  <span *ngIf="h1Class === 'red'" > ? </span> </h1>
-      <h2 *ngFor="let x of [1,2,3,4]"> Podtyuł {{x}} </h2>
+      <!-- <h2 *ngFor="let x of [1,2,3,4]"> Podtyuł {{x}} </h2> -->
     </header>
   `,
   styles: [
@@ -21,7 +21,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  h1Class = 'red';
+  h1Class = 'green';
   title = 'Auction Portal';
 
   constructor() { }
